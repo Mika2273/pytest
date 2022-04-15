@@ -36,6 +36,10 @@ jobs:
         run: |
           pip install -U pytest
 
+      - name: Install Flask
+        run: |
+          pip install Flask
+
       - name: Install pytest-html
         run: |
           pip install pytest-html
