@@ -61,3 +61,11 @@ def test_flask_path2_mock(mocker):
 
     result = client.get('/')
     assert b'Hello Mika' == result.data
+
+@pytest.mark.exp
+@pytest.mark.parametrize("value", ["x", "&", None])
+def test_flask_path2_except(value:int):
+    try:
+        pow(value, 2)
+    except TypeError:
+        assert True

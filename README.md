@@ -23,6 +23,8 @@ pipenv install
 3. Install mocker
 `python -m pip install pytest-mock`
 
+4. Install Locust
+`pip install locust`
 # Test
 
 1. Execute all the tests.
@@ -33,3 +35,5 @@ pipenv install
 `pytest -v  --html=report.html --self-contained-html`
 4. Test path other
 `pytest -m others -v`
+5. Locust
+`locust -f locustfile.py`
