@@ -43,3 +43,7 @@ jobs:
       - name: Install mocker
         run: |
           python -m pip install pytest-mock
+
+      - name: Pytest
+        run: |
+          pytest -v
